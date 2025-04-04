@@ -1,0 +1,169 @@
+
+
+:root {
+    background-color: #F6F5F5;
+    font-family: 'Figtree';
+  }
+  
+  img{
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  h1{   
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #22195B;
+    display: flex;
+    margin-left: 20px;
+  }
+
+
+  /* Contenedor de notas */
+#container-notas {
+    display: flex;
+    flex-wrap: wrap; /* Que se pongan en varias líneas si no caben */
+    gap: 20px; /* Espaciado entre notas */
+    justify-content: flex-start; 
+    padding: 20px;
+    text-wrap: balance;
+  }
+
+/* Cada nota */
+.nota {
+    background: #f8f9fa; 
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.nota:hover {
+    transform: scale(1.05); 
+}
+
+/* Estilos del título */
+.titulo-nota {
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #22195B;
+}
+
+/* Estilos contenido párrafo */
+.contenido-nota {
+    font-size: 1em;
+    color: #555555;
+    margin-bottom: 15px;
+    text-wrap: pretty;
+    height: 40px;
+}
+
+/* Estilos del botón "Ver Nota" */
+.ver-nota-btn {
+    background: #DB868B;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ver-nota-btn:hover {
+    background:#e8b5b9;
+}
+
+#crear-nota-texto {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #22195B; 
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#crear-nota-texto:hover {
+  background-color: #392e80;
+  transform: scale(1.1);
+}
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  max-width: 600px;  
+  min-width: 300px;  
+  margin: 0 auto;
+  box-sizing: border-box;
+
+
+}
+#contenidoNota, #tituloNota, #guardarNotaBtn{
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input, textarea {
+  border: 2px solid #ccc;  
+  border-radius: 5px;
+  /* Quitar el predeterminado para poderlo cambiar. Se aplicaba este encima */
+  outline: none; 
+}
+
+
+input:focus, textarea:focus {
+  border-color: #DB868B;
+}
+
+#tituloNota{
+  margin-top: 20px;
+  height: 40px;
+}
+
+#contenidoNota{
+  height: 150px;
+}
+
+
+#guardarNotaBtn{
+    width: 150px;
+    height: 40px;
+    align-self: flex-end;
+    background: #DB868B;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  #guardarNotaBtn:hover {
+    background-color: #e8b5b9;
+    transform: scale(1.1);
+  }
+  
+#tituloWebNuevaNota{
+  margin-left:0;
+   
+}
+
+#nota{
+  color:#22195B; 
+}
